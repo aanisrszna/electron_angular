@@ -1,0 +1,33 @@
+<div class="header">
+    <h1>Dashboard</h1>
+    <button class="sign-out" (click)="signOut()">
+      <i class="fas fa-sign-out-alt"></i> Sign Out
+    </button>
+  </div>
+  <div class="container">
+    <div class="overview">
+      <p class="welcome-message">Welcome to your dashboard!</p>
+    </div>
+    <div class="user-list">
+      <h2>User List</h2>
+      <table>
+        <thead>
+          <tr class="table-row">
+            <th class="col-small">#</th>
+            <th class="col-medium">First Name</th>
+            <th class="col-medium">Last Name</th>
+            <th class="col-large">Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of userList; let i = index" class="table-row">
+            <td class="col-small">{{i + 1}}</td>
+            <td class="col-medium">{{user.firstName}}</td>
+            <td class="col-medium">{{user.lastName}}</td>
+            <td class="col-large">{{user.username}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
