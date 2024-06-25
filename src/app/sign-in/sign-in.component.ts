@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
-import { PouchDbService } from '../services/pouch-db.service'; // Adjust the path as needed
+import { PouchDbService } from '../services/pouch-db.service';
 
 @Component({
   selector: 'app-sign-in',

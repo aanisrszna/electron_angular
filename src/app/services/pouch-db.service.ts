@@ -18,7 +18,7 @@ export class PouchDbService {
       email: 'anis@aemenersol.com',
       password: 'Test@123'
     };
-    // Hash the password before storing
+
     const hashedPassword = await bcrypt.hash(user.password, 10);
     try {
       await this.db.put({
