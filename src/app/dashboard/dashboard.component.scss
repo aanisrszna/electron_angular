@@ -2,12 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f1f1f1;
-    padding: 1rem;
-    border-bottom: 1px solid #ccc;
+    background-color: #333;
+    padding: 10px;
+    color: #fff; // Ensure text color is visible on dark background
     
     h1 {
       margin: 0;
+      font-size: 1.5rem; // Adjust font size if needed
     }
   
     .sign-out {
@@ -15,14 +16,14 @@
       border: none;
       cursor: pointer;
       font-size: 1rem;
-      color: #007bff;
+      color: #fff; // Ensure text color is visible on dark background
       
       i {
         margin-right: 0.5rem;
       }
   
       &:hover {
-        color: #0056b3;
+        color: #ccc; // Change hover color to a lighter shade for better visibility
       }
     }
   }
@@ -69,22 +70,20 @@
           &:hover {
             background-color: #f1f1f1;
           }
-          height: 60px
-
+          height: 60px;
         }
   
         .col-small {
-            width: 5%;
-          }
-          
-          .col-medium {
-            width: 20%;
-          }
-          
-          .col-large {
-            width: 55%;
-          }
-
+          width: 5%;
+        }
+        
+        .col-medium {
+          width: 20%;
+        }
+        
+        .col-large {
+          width: 55%;
+        }
       }
     }
   }
